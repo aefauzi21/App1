@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-row>
+          <ion-col>
+            <div></div>
+          </ion-col>
+          <ion-col>
+            <div>About As</div>
+          </ion-col>
+          <ion-col>
+            <div></div>
+          </ion-col>
+        </ion-row>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+    <ion-card class="welcome-card">
+        <img src="/assets/23.png" alt="" />
+        <ion-card-header>
+          <ion-card-subtitle>About Us</ion-card-subtitle>
+          <ion-card-title>BakoolBuku.Com</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Sebuah aplikasi yang sesorang tanpa harus antri pada toko buku biasa</p>
+        </ion-card-content>
+      </ion-card>
+    <ion-item>
+        <ion-label position="floating">Kritik dan Saran</ion-label>
+        <ion-textarea [(ngModel)]="kritiksaran"></ion-textarea>
+     </ion-item>
+     <ion-row>
+        <ion-col>
+          <div></div>
+        </ion-col>
+        <ion-col>
+            <ion-button full (click)="submit()">Submit</ion-button>
+        </ion-col>
+        <ion-col>
+          <div></div>
+        </ion-col>
+    </ion-row>
+   
+</ion-content>

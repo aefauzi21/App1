@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-row>
+          <ion-col>
+            <div></div>
+          </ion-col>
+          <ion-col>
+            <div>Keranjangku</div>
+          </ion-col>
+          <ion-col>
+            <div></div>
+          </ion-col>
+        </ion-row>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item [routerLink]="'/tabs/tab1/detail'">
+          <ion-icon slot="start" color="high" name="cart"></ion-icon>
+          <ion-label>Menunggu Pembayaran</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="'/tabs/tab1/detail'">
+          <ion-icon slot="start" color="high" name="stopwatch"></ion-icon>
+          <ion-label>Dalam Proses</ion-label>
+        </ion-item>
+           <ion-item href="https://berdu.id/cek-resi">
+          <ion-icon slot="start" color="high" name="jet"></ion-icon>
+          <ion-label>Cek Resi</ion-label>
+          <ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+</ion-content>
+        </ion-item>
+           </ion-list>
+</ion-content>

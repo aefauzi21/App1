@@ -1,0 +1,88 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>      
+        <ion-row>
+            <ion-col>
+              <div><ion-icon [routerLink]="'/tabs/tab1'" name="arrow-back"> </ion-icon></div>
+            </ion-col>
+            <ion-col>
+                <ion-label>Perguruan Tinggi</ion-label>
+            </ion-col>
+            <ion-col>
+              <div></div>
+            </ion-col>
+        </ion-row>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>  
+      <ion-searchbar></ion-searchbar>
+      <ion-card>
+          
+          <ion-card-header>
+            <ion-card-title>Pemrograman</ion-card-title>
+          </ion-card-header>
+          <img src="/assets/andro1.jpg"/>
+      <ion-card-content>
+          Buku Belajar Pemrograman Arduino
+         Rp. 50.000;
+        </ion-card-content>
+        
+        <ion-button full (click)="Pesan()">Beli</ion-button>
+      </ion-card>
+      <ion-card>
+          
+          <ion-card-header>
+            <ion-card-title>Pemrograman</ion-card-title>
+          </ion-card-header>
+          <img src="/assets/it1.jpg"/>
+      <ion-card-content>
+          Buku Belajar Pemrograman WEB
+         Rp. 65.000;
+        </ion-card-content>
+        
+        <ion-button full (click)="Pesan()">Beli</ion-button>
+      </ion-card>
+      <ion-card>
+          
+          <ion-card-header>
+            <ion-card-title>Design </ion-card-title>
+          </ion-card-header>
+          <img src="/assets/auto1.jpg"/>
+      <ion-card-content>
+          Buku Belajar Autocad
+         Rp. 55.000;
+        </ion-card-content>
+        
+        <ion-button full (click)="Pesan()">Beli</ion-button>
+      </ion-card>
+      <ion-card>
+          
+          <ion-card-header>
+            <ion-card-title>Geografi</ion-card-title>
+          </ion-card-header>
+          <img src="/assets/geo1.jpg"/>
+      <ion-card-content>
+          Buku BOG (Basic Of Geomatics)
+         Rp. 75.000;
+        </ion-card-content>
+        
+        <ion-button full (click)="Pesan()">Beli</ion-button>
+      </ion-card>
+      <ion-card>
+          
+          <ion-card-header>
+            <ion-card-title>Hukum</ion-card-title>
+          </ion-card-header>
+          <img src="/assets/hu1.jpg"/>
+      <ion-card-content>
+          Buku Teori Hukum
+         Rp. 45.000;
+        </ion-card-content>
+        
+        <ion-button full (click)="Pesan()">Beli</ion-button>
+      </ion-card>
+         
+  </ion-content>
+  

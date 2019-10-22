@@ -1,0 +1,100 @@
+<ion-header>
+        <ion-toolbar>
+          <ion-title>      
+            <ion-row>
+                <ion-col>
+                  <div><ion-icon [routerLink]="'/tabs/tab1'" name="arrow-back"> </ion-icon></div>
+                </ion-col>
+                <ion-col>
+                    <ion-label>Umum</ion-label>
+                </ion-col>
+                <ion-col>
+                  <div></div>
+                </ion-col>
+            </ion-row>
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      
+      <ion-content>  
+          <ion-searchbar></ion-searchbar>
+          <ion-card>
+          
+              <ion-card-header>
+                <ion-card-title>Makanan</ion-card-title>
+              </ion-card-header>
+              <img src="/assets/me1.jpg"/>
+          <ion-card-content>
+              Buku Belajar Memasak Bersama Bella
+             Rp. 35.000;
+            </ion-card-content>
+            
+            <ion-button full (click)="Pesan()">Beli</ion-button>
+          </ion-card>
+          <ion-card>
+          
+              <ion-card-header>
+                <ion-card-title>Makanan </ion-card-title>
+              </ion-card-header>
+              <img src="/assets/me2.jpg"/>
+          <ion-card-content>
+              Buku Resep Rumahan
+             Rp. 50.000;
+            </ion-card-content>
+            
+            <ion-button full (click)="Pesan()">Beli</ion-button>
+          </ion-card>
+          <ion-card>
+          
+              <ion-card-header>
+                <ion-card-title>Agama </ion-card-title>
+              </ion-card-header>
+              <img src="/assets/ag1.jpg"/>
+          <ion-card-content>
+              Buku Agama Untuk Peradaban
+             Rp. 55.000;
+            </ion-card-content>
+            
+            <ion-button full (click)="Pesan()">Beli</ion-button>
+          </ion-card>
+          <ion-card>
+          
+              <ion-card-header>
+                <ion-card-title>Agama</ion-card-title>
+              </ion-card-header>
+              <img src="/assets/ag2.jpg"/>
+          <ion-card-content>
+              Buku Agama, Negara & HAM
+             Rp. 65.000;
+            </ion-card-content>
+            
+            <ion-button full (click)="Pesan()">Beli</ion-button>
+          </ion-card>
+          <ion-card>
+          
+              <ion-card-header>
+                <ion-card-title>Politik</ion-card-title>
+              </ion-card-header>
+              <img src="/assets/po1.jpg"/>
+          <ion-card-content>
+              Buku Politik dan Kebebasan
+             Rp. 35.000;
+            </ion-card-content>
+            
+            <ion-button full (click)="Pesan()">Beli</ion-button>
+          </ion-card>
+          <ion-card>
+          
+              <ion-card-header>
+                <ion-card-title>Politik </ion-card-title>
+              </ion-card-header>
+              <img src="/assets/po2.jpg"/>
+          <ion-card-content>
+              Buku Politik Hukum di Indonesia
+             Rp. 40.000;
+            </ion-card-content>
+            
+            <ion-button full (click)="Pesan()">Beli</ion-button>
+          </ion-card>
+      </ion-content>
+      
