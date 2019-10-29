@@ -30,9 +30,8 @@
     
       <p text-right>Forgot Password?</p>
     
-      <ion-button type="submit" expand="full" color="primary">Login</ion-button>
+      <ion-button (click)="Success()" type="submit" expand="full" color="primary">Login</ion-button>
     </form>
-    <p text-center>Don't have a account?</p>
-    <ion-item [routerLink]="'/tabs/tab4/detail'"></ion-item>
-    <ion-button expand="full" color="danger" (click)="registerModal()">Register</ion-button>
+    <p text-center>Don't have an account?</p>
+        <ion-button [routerLink]="'/tabs/tab4-detail'" expand="full" color="danger" (click)="registerModal()">Register</ion-button>
   </ion-content>

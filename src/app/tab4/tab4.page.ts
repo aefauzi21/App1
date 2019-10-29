@@ -18,6 +18,7 @@ export class Tab4Page implements OnInit {
     //private authService: AuthService,
     private navCtrl: NavController,
     //private alertService: AlertService
+    
   ) { }
   ngOnInit() {
   }
@@ -46,5 +47,8 @@ export class Tab4Page implements OnInit {
         this.navCtrl.navigateRoot('/dashboard');
       }
     );
+  }
+  Success(){
+      console.log('Success Login')
   }
 }
