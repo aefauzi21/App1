@@ -9,7 +9,10 @@ import { AlertService } from 'src/app/services/alert.service';
   templateUrl: './tab4.page.html',
   styleUrls: ['./tab4.page.scss'],
 })
+
 export class Tab4Page implements OnInit {
+    public email:any;
+    public password:any;
     authService: any;
     alertService: any;
   
@@ -19,7 +22,11 @@ export class Tab4Page implements OnInit {
     private navCtrl: NavController,
     //private alertService: AlertService
     
-  ) { }
+  ) {}
+  login(){
+    console.log("Email    :   " + this.email)
+    console.log("Password  :   " + this.password)
+  }
   ngOnInit() {
   }
   // Dismiss Login Modal
@@ -46,9 +53,7 @@ export class Tab4Page implements OnInit {
         this.dismissTab4();
         this.navCtrl.navigateRoot('/dashboard');
       }
-    );
-  }
-  Success(){
-      console.log('Success Login')
-  }
+    );   
+}
+
 }
